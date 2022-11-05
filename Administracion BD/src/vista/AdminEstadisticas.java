@@ -61,12 +61,12 @@ public class AdminEstadisticas extends JFrame{
         btnRegresar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         lblListaEstadisticas1 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
+        lblListaEstadisticas3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        panel.setBackground(java.awt.Color.lightGray);
+        panel.setBackground(java.awt.Color.white);
         panel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnGenerarStats.setBackground(new java.awt.Color(153, 255, 153));
@@ -78,20 +78,18 @@ public class AdminEstadisticas extends JFrame{
                 btnGenerarStatsActionPerformed(evt);
             }
         });
-        panel.add(btnGenerarStats, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 180, 140, 30));
+        panel.add(btnGenerarStats, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 140, 30));
 
-        cbTablas.setBackground(java.awt.Color.darkGray);
-        cbTablas.setBorder(null);
+        cbTablas.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         cbTablas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbTablasActionPerformed(evt);
             }
         });
-        panel.add(cbTablas, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, 240, -1));
+        panel.add(cbTablas, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 240, -1));
 
-        btnVerStats.setBackground(java.awt.Color.darkGray);
+        btnVerStats.setBackground(java.awt.Color.yellow);
         btnVerStats.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        btnVerStats.setForeground(java.awt.Color.white);
         btnVerStats.setText("Ver Estadisticas");
         btnVerStats.setBorder(null);
         btnVerStats.addActionListener(new java.awt.event.ActionListener() {
@@ -99,9 +97,9 @@ public class AdminEstadisticas extends JFrame{
                 btnVerStatsActionPerformed(evt);
             }
         });
-        panel.add(btnVerStats, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 420, 140, 30));
+        panel.add(btnVerStats, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 420, 140, 30));
 
-        rbSchema.setBackground(new java.awt.Color(36, 47, 65));
+        rbSchema.setBackground(new java.awt.Color(255, 255, 255));
         rbSchema.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         rbSchema.setText("Esquema");
         rbSchema.addActionListener(new java.awt.event.ActionListener() {
@@ -109,9 +107,9 @@ public class AdminEstadisticas extends JFrame{
                 rbSchemaActionPerformed(evt);
             }
         });
-        panel.add(rbSchema, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 180, -1, -1));
+        panel.add(rbSchema, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, 20, -1));
 
-        rbTabla.setBackground(new java.awt.Color(36, 47, 65));
+        rbTabla.setBackground(new java.awt.Color(255, 255, 255));
         rbTabla.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         rbTabla.setText("Tabla");
         rbTabla.addActionListener(new java.awt.event.ActionListener() {
@@ -119,9 +117,8 @@ public class AdminEstadisticas extends JFrame{
                 rbTablaActionPerformed(evt);
             }
         });
-        panel.add(rbTabla, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, -1, -1));
+        panel.add(rbTabla, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 20, -1));
 
-        jTable1.setForeground(java.awt.Color.black);
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -132,29 +129,30 @@ public class AdminEstadisticas extends JFrame{
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        panel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 600, 170));
+        panel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 600, 170));
 
-        btnRegresar.setBackground(java.awt.Color.darkGray);
-        btnRegresar.setForeground(java.awt.Color.gray);
-        btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/devolverse.png"))); // NOI18N
-        btnRegresar.setBorder(null);
+        btnRegresar.setBackground(java.awt.Color.blue);
+        btnRegresar.setForeground(java.awt.Color.white);
+        btnRegresar.setText("Volver");
+        btnRegresar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegresarActionPerformed(evt);
             }
         });
-        panel.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 50, 50));
+        panel.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 60, 30));
 
-        jLabel2.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 2, 24)); // NOI18N
         jLabel2.setText("Estadísticas");
-        panel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, -1, 30));
+        panel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, 30));
 
         lblListaEstadisticas1.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        lblListaEstadisticas1.setText("Selecione una Tabla especifica o todo el Esquema actual para generar las estadisticas.");
-        panel.add(lblListaEstadisticas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 500, 20));
+        lblListaEstadisticas1.setText("Estadistica por schema");
+        panel.add(lblListaEstadisticas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 130, 20));
 
-        jSeparator1.setBackground(java.awt.Color.black);
-        panel.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 630, 10));
+        lblListaEstadisticas3.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        lblListaEstadisticas3.setText("Estadistica por tabla");
+        panel.add(lblListaEstadisticas3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 130, 20));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -307,9 +305,9 @@ public class AdminEstadisticas extends JFrame{
     private javax.swing.JComboBox<String> cbTablas;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTable jTable1;
     private javax.swing.JLabel lblListaEstadisticas1;
+    private javax.swing.JLabel lblListaEstadisticas3;
     private javax.swing.JPanel panel;
     private javax.swing.JRadioButton rbSchema;
     private javax.swing.JRadioButton rbTabla;

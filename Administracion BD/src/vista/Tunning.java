@@ -61,7 +61,6 @@ public class Tunning extends JFrame{
         txtSql = new javax.swing.JTextField();
         btnEliminarPlanes = new javax.swing.JButton();
         btnverPlan1 = new javax.swing.JButton();
-        jSeparator1 = new javax.swing.JSeparator();
         btnCrearPlan1 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
@@ -78,7 +77,7 @@ public class Tunning extends JFrame{
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        panel.setBackground(java.awt.Color.lightGray);
+        panel.setBackground(new java.awt.Color(255, 255, 255));
         panel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnCrearPlan.setBackground(new java.awt.Color(153, 255, 153));
@@ -90,7 +89,7 @@ public class Tunning extends JFrame{
                 btnCrearPlanActionPerformed(evt);
             }
         });
-        panel.add(btnCrearPlan, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 150, 180, 30));
+        panel.add(btnCrearPlan, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 170, 30));
 
         tablaPlanes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -110,30 +109,31 @@ public class Tunning extends JFrame{
         });
         jScrollPane1.setViewportView(tablaPlanes);
 
-        panel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 630, 230));
+        panel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 170, 720, 230));
 
-        btnRegresar.setBackground(java.awt.Color.darkGray);
+        btnRegresar.setBackground(new java.awt.Color(0, 0, 255));
         btnRegresar.setForeground(java.awt.Color.white);
-        btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/devolverse.png"))); // NOI18N
-        btnRegresar.setBorder(null);
+        btnRegresar.setText("Volver");
+        btnRegresar.setToolTipText("");
+        btnRegresar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegresarActionPerformed(evt);
             }
         });
-        panel.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 50, 50));
+        panel.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 40, 70, 40));
 
         jLabel2.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
         jLabel2.setText("Crear Indices");
-        panel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 90, -1, 30));
+        panel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, -1, 30));
 
         jLabel3.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jLabel3.setText("Nombre : ");
-        panel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 260, 80, 30));
+        panel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 480, 80, 20));
 
         txtSql.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        txtSql.setBorder(null);
-        panel.add(txtSql, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 430, 30));
+        txtSql.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        panel.add(txtSql, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 430, 30));
 
         btnEliminarPlanes.setBackground(java.awt.Color.darkGray);
         btnEliminarPlanes.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
@@ -145,7 +145,7 @@ public class Tunning extends JFrame{
                 btnBorrarPlanesActionPerformed(evt);
             }
         });
-        panel.add(btnEliminarPlanes, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 480, 160, 30));
+        panel.add(btnEliminarPlanes, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, 170, 30));
 
         btnverPlan1.setBackground(java.awt.Color.darkGray);
         btnverPlan1.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
@@ -157,10 +157,7 @@ public class Tunning extends JFrame{
                 btnverPlan1btnVerPlanesActionPerformed(evt);
             }
         });
-        panel.add(btnverPlan1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 200, 190, 30));
-
-        jSeparator1.setBackground(java.awt.Color.black);
-        panel.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 640, 20));
+        panel.add(btnverPlan1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 170, 30));
 
         btnCrearPlan1.setBackground(new java.awt.Color(153, 255, 153));
         btnCrearPlan1.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
@@ -171,22 +168,22 @@ public class Tunning extends JFrame{
                 btnCrearPlan1ActionPerformed(evt);
             }
         });
-        panel.add(btnCrearPlan1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 310, 180, 30));
+        panel.add(btnCrearPlan1, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 530, 110, 50));
 
         jLabel4.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jLabel4.setText("Ingrese una consulta SQL a optimizar");
-        panel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 330, 30));
+        panel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 330, 30));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        panel.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 230, 140, -1));
+        panel.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 520, 140, -1));
 
         jLabel5.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jLabel5.setText("Tabla: ");
-        panel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 180, 70, 30));
+        panel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 520, 70, 20));
 
         jLabel6.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jLabel6.setText("Schema: ");
-        panel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 140, 70, 30));
+        panel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 440, 70, 20));
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
@@ -194,7 +191,7 @@ public class Tunning extends JFrame{
                 jComboBox2ActionPerformed(evt);
             }
         });
-        panel.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 190, 140, -1));
+        panel.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 480, 140, -1));
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox3.addActionListener(new java.awt.event.ActionListener() {
@@ -202,22 +199,22 @@ public class Tunning extends JFrame{
                 jComboBox3ActionPerformed(evt);
             }
         });
-        panel.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 150, 140, -1));
+        panel.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 440, 140, -1));
 
         jLabel7.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
         jLabel7.setText("Explain Plan");
-        panel.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, -1, 30));
+        panel.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, 30));
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
-        panel.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 270, 140, -1));
+        panel.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 560, 140, -1));
 
         jLabel8.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jLabel8.setText("Campo: ");
-        panel.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 220, 70, 30));
+        panel.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 560, 70, 20));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -232,7 +229,7 @@ public class Tunning extends JFrame{
         ));
         jScrollPane2.setViewportView(jTable1);
 
-        panel.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 380, 320, 140));
+        panel.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 440, 320, 140));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -308,7 +305,7 @@ public class Tunning extends JFrame{
     
 
     public void cargarUsuarios() {
-        db.conectar("sys", "root123");
+        db.conectar("sys", "0000");
         resultado = db.usuarios();
 
         if (resultado != null) {
@@ -327,7 +324,7 @@ public class Tunning extends JFrame{
     }
     
     public void cargarTablas() {
-        db.conectar("sys", "root123");
+        db.conectar("sys", "0000");
         resultado2 = db.verTablasXSchema(String.valueOf(jComboBox3.getSelectedItem()));
 
         if (resultado2 != null) {
@@ -346,7 +343,7 @@ public class Tunning extends JFrame{
     }
     
     public void cargarCampos() {
-        db.conectar("sys", "root123");
+        db.conectar("sys", "0000");
         resultado3 = db.verCamposXTabla(String.valueOf(jComboBox2.getSelectedItem()));
 
         if (resultado3 != null) {
@@ -461,7 +458,6 @@ public class Tunning extends JFrame{
     private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JPanel panel;

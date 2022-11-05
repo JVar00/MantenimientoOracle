@@ -39,7 +39,7 @@ public class Login extends javax.swing.JFrame{
     public void cargarUsuarios(){
         
 
-      fun.conectar("sys","root123");
+      fun.conectar("sys","0000");
 
       resultado = fun.usuarios();
       
@@ -64,21 +64,18 @@ public class Login extends javax.swing.JFrame{
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Panel_izquierdo = new javax.swing.JPanel();
-        titulo = new javax.swing.JLabel();
-        cubo_pic = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
-        jLabel7 = new javax.swing.JLabel();
         Panel_derecho = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        Ingresar_esquema_boton = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         Panel_cerrar = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        contrasena_esquema = new javax.swing.JPasswordField();
-        jSeparator2 = new javax.swing.JSeparator();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        titulo = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         esquemas_combo_box = new javax.swing.JComboBox<>();
+        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        contrasena_esquema = new javax.swing.JPasswordField();
+        Ingresar_esquema_boton = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -90,55 +87,11 @@ public class Login extends javax.swing.JFrame{
         setSize(new java.awt.Dimension(630, 420));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Panel_izquierdo.setBackground(java.awt.Color.gray);
-        Panel_izquierdo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        titulo.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
-        titulo.setForeground(new java.awt.Color(255, 255, 255));
-        titulo.setText("Administrador de BD");
-        Panel_izquierdo.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
-
-        cubo_pic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/db_administracion.png"))); // NOI18N
-        Panel_izquierdo.add(cubo_pic, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 200, 210));
-
-        jSeparator1.setBackground(java.awt.Color.black);
-        Panel_izquierdo.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 240, 10));
-
-        jLabel7.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel7.setForeground(java.awt.Color.white);
-        jLabel7.setText("Compatible con OracleXE 18c");
-        Panel_izquierdo.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 370, 170, -1));
-        jLabel7.getAccessibleContext().setAccessibleDescription("");
-
-        getContentPane().add(Panel_izquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 400));
-
-        Panel_derecho.setBackground(java.awt.Color.lightGray);
+        Panel_derecho.setBackground(new java.awt.Color(255, 255, 255));
+        Panel_derecho.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Panel_derecho.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel6.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(51, 102, 0));
-        jLabel6.setText("Algunas funciones requieren al usuario SYSTEM.");
-        Panel_derecho.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, 20));
-
-        Ingresar_esquema_boton.setBackground(new java.awt.Color(153, 255, 153));
-        Ingresar_esquema_boton.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        Ingresar_esquema_boton.setText("Ingresar");
-        Ingresar_esquema_boton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Ingresar_esquema_boton.setBorderPainted(false);
-        Ingresar_esquema_boton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        Ingresar_esquema_boton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Ingresar_esquema_botonActionPerformed(evt);
-            }
-        });
-        Panel_derecho.add(Ingresar_esquema_boton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 80, 30));
-
-        jLabel2.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(60, 63, 65));
-        jLabel2.setText("Esquema");
-        Panel_derecho.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, 60, -1));
-
-        Panel_cerrar.setBackground(new java.awt.Color(36, 47, 65));
+        Panel_cerrar.setBackground(new java.awt.Color(255, 255, 255));
         Panel_cerrar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Panel_cerrarMouseClicked(evt);
@@ -146,11 +99,49 @@ public class Login extends javax.swing.JFrame{
         });
 
         jLabel4.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("X");
         Panel_cerrar.add(jLabel4);
 
-        Panel_derecho.add(Panel_cerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 20, 20, -1));
+        Panel_derecho.add(Panel_cerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 10, 20, -1));
+
+        jLabel6.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel6.setText("AVISO. Para acceder a unas funciones es necesario acceder con el usuario SYSTEM");
+        Panel_derecho.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, -1, 20));
+
+        jLabel7.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        jLabel7.setText("Compatible con OracleXE 18c");
+        Panel_derecho.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, 170, -1));
+        jLabel7.getAccessibleContext().setAccessibleDescription("");
+
+        titulo.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
+        titulo.setText("Administrador de Bases de Datos");
+        Panel_derecho.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, -1, -1));
+
+        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
+        jPanel1.setLayout(null);
+
+        esquemas_combo_box.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        esquemas_combo_box.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        esquemas_combo_box.setBorder(null);
+        esquemas_combo_box.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        esquemas_combo_box.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                esquemas_combo_boxActionPerformed(evt);
+            }
+        });
+        jPanel1.add(esquemas_combo_box);
+        esquemas_combo_box.setBounds(30, 90, 220, 30);
+
+        jLabel2.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        jLabel2.setText("Esquema");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(30, 60, 60, 16);
+
+        jLabel3.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        jLabel3.setText("Contraseña");
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(30, 140, 66, 16);
 
         contrasena_esquema.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         contrasena_esquema.setText("contrasena");
@@ -161,35 +152,32 @@ public class Login extends javax.swing.JFrame{
                 contrasena_esquemaMouseClicked(evt);
             }
         });
-        Panel_derecho.add(contrasena_esquema, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, 170, 20));
+        jPanel1.add(contrasena_esquema);
+        contrasena_esquema.setBounds(30, 170, 170, 20);
 
-        jSeparator2.setBackground(java.awt.Color.black);
-        Panel_derecho.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 310, 10));
-
-        esquemas_combo_box.setBackground(java.awt.Color.darkGray);
-        esquemas_combo_box.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        esquemas_combo_box.setForeground(java.awt.Color.white);
-        esquemas_combo_box.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        esquemas_combo_box.setBorder(null);
-        esquemas_combo_box.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        esquemas_combo_box.addActionListener(new java.awt.event.ActionListener() {
+        Ingresar_esquema_boton.setBackground(new java.awt.Color(153, 255, 153));
+        Ingresar_esquema_boton.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        Ingresar_esquema_boton.setText("Ingresar");
+        Ingresar_esquema_boton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Ingresar_esquema_boton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Ingresar_esquema_boton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                esquemas_combo_boxActionPerformed(evt);
+                Ingresar_esquema_botonActionPerformed(evt);
             }
         });
-        Panel_derecho.add(esquemas_combo_box, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 220, 30));
-
-        jLabel3.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel3.setText("Contraseña");
-        Panel_derecho.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, -1, -1));
+        jPanel1.add(Ingresar_esquema_boton);
+        Ingresar_esquema_boton.setBounds(120, 210, 210, 30);
 
         jLabel8.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel8.setText("Elija el esquema al que quiera conectarse");
-        Panel_derecho.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, -1, -1));
+        jLabel8.setText("Ingrese con el Schema deseado");
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(110, 20, 225, 20);
 
-        getContentPane().add(Panel_derecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 370, 400));
+        Panel_derecho.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 430, 270));
 
-        setSize(new java.awt.Dimension(628, 399));
+        getContentPane().add(Panel_derecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 420));
+
+        setSize(new java.awt.Dimension(633, 421));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -238,9 +226,7 @@ public class Login extends javax.swing.JFrame{
     private javax.swing.JButton Ingresar_esquema_boton;
     private javax.swing.JPanel Panel_cerrar;
     private javax.swing.JPanel Panel_derecho;
-    private javax.swing.JPanel Panel_izquierdo;
     private javax.swing.JPasswordField contrasena_esquema;
-    private javax.swing.JLabel cubo_pic;
     private javax.swing.JComboBox<String> esquemas_combo_box;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -248,8 +234,7 @@ public class Login extends javax.swing.JFrame{
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel titulo;
     // End of variables declaration//GEN-END:variables
 }

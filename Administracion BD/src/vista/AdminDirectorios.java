@@ -52,73 +52,64 @@ public class AdminDirectorios extends JFrame{
         btnRegresar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         JtxtArea = new javax.swing.JTextArea();
-        lblListaRespaldos = new javax.swing.JLabel();
         btnCrearDirectorio = new javax.swing.JButton();
         comboUsuarios = new javax.swing.JComboBox<>();
         lblDirectorio = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jSeparator2 = new javax.swing.JSeparator();
         lblListaRespaldos1 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        panel.setBackground(java.awt.Color.lightGray);
+        panel.setBackground(java.awt.Color.white);
         panel.setForeground(java.awt.Color.lightGray);
         panel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnBorrarDir.setBackground(new java.awt.Color(255, 102, 102));
         btnBorrarDir.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         btnBorrarDir.setForeground(java.awt.Color.white);
-        btnBorrarDir.setText("Borrar Directorio");
+        btnBorrarDir.setText("Borrar ");
         btnBorrarDir.setBorder(null);
         btnBorrarDir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBorrarDirActionPerformed(evt);
             }
         });
-        panel.add(btnBorrarDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, 130, 30));
+        panel.add(btnBorrarDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, 80, 20));
 
-        boxDirectorios.setBackground(java.awt.Color.darkGray);
+        boxDirectorios.setBackground(new java.awt.Color(255, 255, 51));
         boxDirectorios.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         boxDirectorios.setForeground(java.awt.Color.white);
-        boxDirectorios.setBorder(null);
+        boxDirectorios.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         boxDirectorios.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 boxDirectoriosItemStateChanged(evt);
             }
         });
-        panel.add(boxDirectorios, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 230, 20));
+        panel.add(boxDirectorios, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 230, 20));
 
-        btnRegresar.setBackground(java.awt.Color.darkGray);
+        btnRegresar.setBackground(java.awt.Color.blue);
         btnRegresar.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/devolverse.png"))); // NOI18N
-        btnRegresar.setBorder(null);
-        btnRegresar.setBorderPainted(false);
+        btnRegresar.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegresar.setText("Volver");
+        btnRegresar.setToolTipText("");
+        btnRegresar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegresarActionPerformed(evt);
             }
         });
-        panel.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 50, 50));
+        panel.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 30, 60, 30));
 
         JtxtArea.setEditable(false);
-        JtxtArea.setBackground(java.awt.Color.white);
         JtxtArea.setColumns(20);
         JtxtArea.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         JtxtArea.setRows(5);
         jScrollPane1.setViewportView(JtxtArea);
 
-        panel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 120, 360, 160));
-
-        lblListaRespaldos.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        lblListaRespaldos.setForeground(new java.awt.Color(204, 0, 0));
-        lblListaRespaldos.setText("Advertencia: el directorio sera borrado de forma permanente.");
-        lblListaRespaldos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        panel.add(lblListaRespaldos, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 370, 20));
+        panel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 340, 160));
 
         btnCrearDirectorio.setBackground(new java.awt.Color(153, 255, 153));
         btnCrearDirectorio.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
@@ -129,46 +120,35 @@ public class AdminDirectorios extends JFrame{
                 btnCrearDirectorioActionPerformed(evt);
             }
         });
-        panel.add(btnCrearDirectorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 390, 130, 30));
+        panel.add(btnCrearDirectorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 270, 130, 30));
 
-        comboUsuarios.setBackground(java.awt.Color.darkGray);
         comboUsuarios.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        comboUsuarios.setForeground(java.awt.Color.white);
-        panel.add(comboUsuarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 230, 20));
+        panel.add(comboUsuarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 190, 230, 20));
 
         lblDirectorio.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        lblDirectorio.setText("Seleccione el usuario al que le creará un nuevo directorio");
-        panel.add(lblDirectorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 340, -1, 50));
+        lblDirectorio.setText("Usuario:");
+        panel.add(lblDirectorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 150, -1, 50));
 
-        jLabel2.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
-        jLabel2.setText("Directorios");
-        panel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, -1, 30));
+        jLabel2.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        jLabel2.setText("Crear nuevo directorio");
+        panel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 140, 180, 20));
 
         jSeparator1.setBackground(java.awt.Color.black);
         panel.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 620, 10));
 
-        jSeparator2.setBackground(java.awt.Color.black);
-        panel.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 620, 10));
-
         lblListaRespaldos1.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        lblListaRespaldos1.setText("Respaldos que hay en el directorio del usuario actual ");
-        panel.add(lblListaRespaldos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, 322, -1));
+        lblListaRespaldos1.setText("Directorios del usuario actual");
+        panel.add(lblListaRespaldos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 322, -1));
 
-        jLabel6.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(51, 102, 0));
-        jLabel6.setText("Luego se le pedira el nombre logico del directorio (el que se vera en Oracle).");
-        panel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, 430, 20));
-
-        jLabel7.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(51, 102, 0));
-        jLabel7.setText("Primero se le pedira la ubicacion y el nombre de la carpeta.");
-        panel.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, 340, 20));
+        jLabel3.setFont(new java.awt.Font("Arial", 2, 24)); // NOI18N
+        jLabel3.setText("Directorios");
+        panel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, 180, 20));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, 680, Short.MAX_VALUE)
+            .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -276,7 +256,7 @@ public class AdminDirectorios extends JFrame{
         
       Logica fun = new Logica();
 
-      fun.conectar("sys","root123");
+      fun.conectar("sys","0000");
 
       resultado=fun.usuarios();
       
@@ -305,13 +285,10 @@ public class AdminDirectorios extends JFrame{
     private javax.swing.JButton btnRegresar;
     private javax.swing.JComboBox<String> comboUsuarios;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JLabel lblDirectorio;
-    private javax.swing.JLabel lblListaRespaldos;
     private javax.swing.JLabel lblListaRespaldos1;
     private javax.swing.JPanel panel;
     // End of variables declaration//GEN-END:variables

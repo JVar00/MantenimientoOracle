@@ -29,7 +29,7 @@ public class Logica {
                user = user + " as sysdba";
            }
             Class.forName("oracle.jdbc.OracleDriver");
-            String BaseDeDatos = "jdbc:oracle:thin:@LAPTOP-TUAVVKTS:1521/XE";
+            String BaseDeDatos = "jdbc:oracle:thin:@localhost:1521/XE";
 
             //String BaseDeDatos = "jdbc:oracle:thin:@192.168.43.209:1521:XE";
             //String sysdba = "sysdba";

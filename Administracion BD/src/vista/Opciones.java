@@ -43,22 +43,15 @@ public class Opciones extends JFrame{
         btnImportarRespaldo = new javax.swing.JButton();
         btnEstadisticas = new javax.swing.JButton();
         btnDirectorios = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        btnParametros = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
         btnTablespaces = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
         btnRoles = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         btnAuditoria = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         btnTunning = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
-        jSeparator2 = new javax.swing.JSeparator();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         cerrar_sesion = new javax.swing.JMenuItem();
@@ -68,163 +61,121 @@ public class Opciones extends JFrame{
         setResizable(false);
         setSize(new java.awt.Dimension(800, 700));
 
-        jPanel1.setBackground(java.awt.Color.lightGray);
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnCrearRespaldos.setBackground(java.awt.Color.darkGray);
-        btnCrearRespaldos.setForeground(java.awt.Color.white);
-        btnCrearRespaldos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/respaldo_off.png"))); // NOI18N
+        btnCrearRespaldos.setBackground(new java.awt.Color(153, 255, 255));
+        btnCrearRespaldos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnCrearRespaldos.setText("Creacion de respaldos");
         btnCrearRespaldos.setBorder(null);
         btnCrearRespaldos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnCrearRespaldos.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/respaldo.png"))); // NOI18N
         btnCrearRespaldos.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnCrearRespaldos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCrearRespaldosActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCrearRespaldos, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 110, 110));
+        jPanel1.add(btnCrearRespaldos, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 240, 50));
 
-        btnImportarRespaldo.setBackground(java.awt.Color.darkGray);
-        btnImportarRespaldo.setForeground(java.awt.Color.white);
-        btnImportarRespaldo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/recuperacion_respaldo_off.png"))); // NOI18N
+        btnImportarRespaldo.setBackground(new java.awt.Color(255, 204, 102));
+        btnImportarRespaldo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnImportarRespaldo.setText("Recuperacion de respaldos");
         btnImportarRespaldo.setBorder(null);
         btnImportarRespaldo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnImportarRespaldo.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/recuperacion_respaldo.png"))); // NOI18N
         btnImportarRespaldo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnImportarRespaldo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnImportarRespaldoActionPerformed(evt);
             }
         });
-        jPanel1.add(btnImportarRespaldo, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 50, 110, 110));
+        jPanel1.add(btnImportarRespaldo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 240, 50));
 
-        btnEstadisticas.setBackground(java.awt.Color.darkGray);
-        btnEstadisticas.setForeground(java.awt.Color.white);
-        btnEstadisticas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/estadisticas_off.png"))); // NOI18N
+        btnEstadisticas.setBackground(new java.awt.Color(255, 204, 204));
+        btnEstadisticas.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnEstadisticas.setText("Administrar Estadisticas");
         btnEstadisticas.setBorder(null);
-        btnEstadisticas.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/estadisticas.png"))); // NOI18N
         btnEstadisticas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEstadisticasActionPerformed(evt);
             }
         });
-        jPanel1.add(btnEstadisticas, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 50, 110, 110));
+        jPanel1.add(btnEstadisticas, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 100, 250, 50));
 
-        btnDirectorios.setBackground(java.awt.Color.darkGray);
-        btnDirectorios.setForeground(java.awt.Color.white);
-        btnDirectorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/archivos_directorios_off.png"))); // NOI18N
+        btnDirectorios.setBackground(new java.awt.Color(255, 204, 255));
+        btnDirectorios.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnDirectorios.setText("Administracion de directorios");
         btnDirectorios.setBorder(null);
-        btnDirectorios.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/archivos_directorios.png"))); // NOI18N
         btnDirectorios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDirectoriosActionPerformed(evt);
             }
         });
-        jPanel1.add(btnDirectorios, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 400, 110, 110));
+        jPanel1.add(btnDirectorios, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 240, 50));
 
-        jLabel1.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel1.setText("Creación de Respaldos");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
+        jLabel2.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel2.setText("Administracion de la BD");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel2.setText("Recuperación  de Respaldos");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, -1, -1));
+        jLabel3.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel3.setText("Estadísticas y Tunning");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel3.setText("Estadísticas");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 30, -1, -1));
-
-        jLabel4.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel4.setText("Administración de Archivos");
-        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 380, -1, -1));
-
-        btnParametros.setBackground(java.awt.Color.darkGray);
-        btnParametros.setForeground(java.awt.Color.white);
-        btnParametros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/parametros_off.png"))); // NOI18N
-        btnParametros.setBorder(null);
-        btnParametros.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/parametros.png"))); // NOI18N
-        btnParametros.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnParametrosActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnParametros, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 230, 110, 110));
-
-        jLabel5.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel5.setText("Tuning");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 380, 60, 20));
-
-        btnTablespaces.setBackground(java.awt.Color.darkGray);
-        btnTablespaces.setForeground(java.awt.Color.white);
-        btnTablespaces.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/tablespace_off.png"))); // NOI18N
+        btnTablespaces.setBackground(new java.awt.Color(204, 255, 204));
+        btnTablespaces.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnTablespaces.setText("Tablespaces de la BD");
         btnTablespaces.setBorder(null);
-        btnTablespaces.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/tablespace.png"))); // NOI18N
         btnTablespaces.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnTablespacesActionPerformed(evt);
             }
         });
-        jPanel1.add(btnTablespaces, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, 110, 110));
+        jPanel1.add(btnTablespaces, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 270, 250, 50));
 
-        jLabel6.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel6.setText("Auditoría");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 380, 60, -1));
-
-        btnRoles.setBackground(java.awt.Color.darkGray);
-        btnRoles.setForeground(java.awt.Color.white);
-        btnRoles.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/users_off.png"))); // NOI18N
+        btnRoles.setBackground(new java.awt.Color(204, 255, 204));
+        btnRoles.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnRoles.setText("Roles y Usuarios");
         btnRoles.setBorder(null);
-        btnRoles.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/users.png"))); // NOI18N
         btnRoles.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRolesActionPerformed(evt);
             }
         });
-        jPanel1.add(btnRoles, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 230, 110, 110));
+        jPanel1.add(btnRoles, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 240, 50));
 
-        jLabel7.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel7.setText("Tablespaces");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 80, -1));
+        jLabel7.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel7.setText("Administracion de Tablespaces y Auditoria");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 230, 390, -1));
 
-        btnAuditoria.setBackground(java.awt.Color.darkGray);
-        btnAuditoria.setForeground(java.awt.Color.white);
-        btnAuditoria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/auditoria_off.png"))); // NOI18N
+        btnAuditoria.setBackground(new java.awt.Color(204, 255, 255));
+        btnAuditoria.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnAuditoria.setText("Auditoria");
         btnAuditoria.setBorder(null);
-        btnAuditoria.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/auditoria.png"))); // NOI18N
         btnAuditoria.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAuditoriaActionPerformed(evt);
             }
         });
-        jPanel1.add(btnAuditoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 400, 110, 110));
+        jPanel1.add(btnAuditoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 340, 250, 50));
 
-        jLabel8.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel8.setText("Roles");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, 50, -1));
+        jLabel8.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel8.setText("Seguridad de la BD");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 190, 20));
 
-        btnTunning.setBackground(java.awt.Color.darkGray);
-        btnTunning.setForeground(java.awt.Color.white);
-        btnTunning.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/tunning_off.png"))); // NOI18N
+        btnTunning.setBackground(new java.awt.Color(204, 204, 255));
+        btnTunning.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnTunning.setText("Tunning de la BD");
+        btnTunning.setToolTipText("");
         btnTunning.setBorder(null);
-        btnTunning.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/tunning.png"))); // NOI18N
         btnTunning.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnTunningActionPerformed(evt);
             }
         });
-        jPanel1.add(btnTunning, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, 110, 110));
+        jPanel1.add(btnTunning, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, 250, 50));
 
-        jLabel9.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel9.setText("Parámetros");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 80, 20));
-
-        jSeparator1.setBackground(java.awt.Color.black);
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 490, 10));
-
-        jSeparator2.setBackground(java.awt.Color.black);
-        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 490, 10));
+        jLabel9.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel9.setText("Respaldos");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
 
         jMenuBar1.setBackground(java.awt.Color.darkGray);
         jMenuBar1.setForeground(java.awt.Color.white);
@@ -247,11 +198,11 @@ public class Opciones extends JFrame{
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 608, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 739, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 551, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 430, Short.MAX_VALUE)
         );
 
         pack();
@@ -317,16 +268,6 @@ public class Opciones extends JFrame{
         ae.setVisible(true);
     }//GEN-LAST:event_btnEstadisticasActionPerformed
 
-    private void btnParametrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnParametrosActionPerformed
-        this.setVisible(false);
-        Parametros par = new Parametros();
-        par.usuario = usuario;
-        par.contrasena = contrasena;
-        par.db = this.db;
-        par.op = this;//le pasamos la referencia de esta ventana
-        par.setVisible(true);
-    }//GEN-LAST:event_btnParametrosActionPerformed
-
     private void btnRolesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRolesActionPerformed
         this.setVisible(false);
         Roles rol = new Roles();
@@ -377,24 +318,17 @@ public class Opciones extends JFrame{
     private javax.swing.JButton btnDirectorios;
     private javax.swing.JButton btnEstadisticas;
     private javax.swing.JButton btnImportarRespaldo;
-    private javax.swing.JButton btnParametros;
     private javax.swing.JButton btnRoles;
     private javax.swing.JButton btnTablespaces;
     private javax.swing.JButton btnTunning;
     private javax.swing.JMenuItem cerrar_sesion;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
     // End of variables declaration//GEN-END:variables
 }

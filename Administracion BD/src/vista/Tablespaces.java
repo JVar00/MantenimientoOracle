@@ -66,16 +66,11 @@ public class Tablespaces extends JFrame{
         jLabel6 = new javax.swing.JLabel();
         btnCrearTablespaceTemp = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jSpinner3 = new javax.swing.JSpinner();
         jLabel9 = new javax.swing.JLabel();
         btnSelectDBF = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
-        jSeparator2 = new javax.swing.JSeparator();
-        jSeparator3 = new javax.swing.JSeparator();
         jLabel5 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
 
         jTextField1.setText("jTextField1");
@@ -84,86 +79,84 @@ public class Tablespaces extends JFrame{
         setResizable(false);
         setSize(new java.awt.Dimension(700, 500));
 
-        jPanel1.setBackground(java.awt.Color.lightGray);
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton2.setBackground(java.awt.Color.darkGray);
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/devolverse.png"))); // NOI18N
-        jButton2.setBorder(null);
+        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("Volver");
+        jButton2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 50, 50));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 70, 40));
 
         param_header.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
-        param_header.setText("Administrar tablespaces");
-        jPanel1.add(param_header, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, -1, -1));
+        param_header.setText("Tablespaces");
+        jPanel1.add(param_header, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel1.setText("Cambiar Tamaño de Datafile");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 200, -1));
+        jLabel1.setText("Aumentar Tamaño de Datafile");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 220, -1));
 
         jLabel2.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel2.setText("Seleccione Tamaño");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 450, 120, -1));
+        jLabel2.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel2.setText("Seleccione el nuevo Tamaño");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 170, -1));
 
-        jSpinner1.setBorder(null);
-        jPanel1.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 290, 100, 30));
+        jSpinner1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel1.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, 250, 30));
 
         jLabel3.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jLabel3.setText("MB");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 150, 30, 20));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 30, 20));
 
         btnCrearTablespace.setBackground(new java.awt.Color(153, 255, 153));
         btnCrearTablespace.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        btnCrearTablespace.setText("Crear");
+        btnCrearTablespace.setText("Crear Tablespace");
         btnCrearTablespace.setBorder(null);
         btnCrearTablespace.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCrearTablespaceActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCrearTablespace, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 150, 70, 30));
+        jPanel1.add(btnCrearTablespace, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 170, 30));
 
         jLabel4.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jLabel4.setText("Crear Tablespace");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 140, -1));
 
         jSpinner2.setToolTipText("50");
-        jSpinner2.setBorder(null);
-        jPanel1.add(jSpinner2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 150, 100, 30));
+        jSpinner2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel1.add(jSpinner2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 200, 30));
 
         jLabel6.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jLabel6.setText("MB");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 290, 30, 20));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 170, 30, 20));
 
         btnCrearTablespaceTemp.setBackground(new java.awt.Color(153, 255, 153));
         btnCrearTablespaceTemp.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        btnCrearTablespaceTemp.setText("Crear");
+        btnCrearTablespaceTemp.setText("Crear Tablespace Temporal");
         btnCrearTablespaceTemp.setBorder(null);
         btnCrearTablespaceTemp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCrearTablespaceTempActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCrearTablespaceTemp, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 290, 70, 30));
+        jPanel1.add(btnCrearTablespaceTemp, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, 180, 30));
 
         jLabel7.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jLabel7.setText("Crear Tablespace Temporal");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 210, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 90, 210, -1));
 
-        jLabel8.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel8.setText("Tamaño del Tablespace Temporal");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 210, -1));
-
-        jSpinner3.setBorder(null);
-        jPanel1.add(jSpinner3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 450, 100, 30));
+        jSpinner3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel1.add(jSpinner3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 200, 30));
 
         jLabel9.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jLabel9.setText("MB");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 450, 30, 20));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 320, 30, 20));
 
         btnSelectDBF.setBackground(new java.awt.Color(153, 255, 153));
         btnSelectDBF.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
@@ -174,32 +167,23 @@ public class Tablespaces extends JFrame{
                 btnSelectDBFActionPerformed(evt);
             }
         });
-        jPanel1.add(btnSelectDBF, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 450, 130, 30));
+        jPanel1.add(btnSelectDBF, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 180, 30));
 
         jLabel10.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel10.setText("Tamaño del Tablespace");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 140, -1));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 600, 10));
-        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 600, 10));
-        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 600, 10));
+        jLabel10.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel10.setText("Ingrese el Tamaño del Tablespace Temporal");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 130, 280, -1));
 
         jLabel5.setBackground(java.awt.Color.lightGray);
         jLabel5.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(204, 0, 0));
-        jLabel5.setText("Advertencia: elija un tamaño superior al que que ya ocupan los datos almacenados o estos seran borrados");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, 610, 20));
+        jLabel5.setText("Advertencia: Es importante conocer el tamaño del TableSpace ya que si se disminuye, se perdera informacion");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 630, 20));
 
-        jLabel11.setBackground(java.awt.Color.lightGray);
-        jLabel11.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(51, 102, 0));
-        jLabel11.setText("Primero elija el tamaño");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 260, 140, 20));
-
-        jLabel12.setBackground(java.awt.Color.lightGray);
         jLabel12.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(51, 102, 0));
-        jLabel12.setText("Primero elija el tamaño");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 120, 140, 20));
+        jLabel12.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel12.setText("Ingrese el Tamaño del Tablespace");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 220, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -209,7 +193,7 @@ public class Tablespaces extends JFrame{
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 548, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 387, Short.MAX_VALUE)
         );
 
         pack();
@@ -326,7 +310,6 @@ public class Tablespaces extends JFrame{
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -334,12 +317,8 @@ public class Tablespaces extends JFrame{
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JSeparator jSeparator3;
     public javax.swing.JSpinner jSpinner1;
     public javax.swing.JSpinner jSpinner2;
     public javax.swing.JSpinner jSpinner3;
