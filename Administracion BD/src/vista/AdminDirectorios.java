@@ -77,7 +77,7 @@ public class AdminDirectorios extends JFrame{
                 btnBorrarDirActionPerformed(evt);
             }
         });
-        panel.add(btnBorrarDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, 80, 20));
+        panel.add(btnBorrarDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, 90, 20));
 
         boxDirectorios.setBackground(new java.awt.Color(255, 255, 51));
         boxDirectorios.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
@@ -130,8 +130,8 @@ public class AdminDirectorios extends JFrame{
         panel.add(lblDirectorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 150, -1, 50));
 
         jLabel2.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel2.setText("Crear nuevo directorio");
-        panel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 140, 180, 20));
+        jLabel2.setText("Crear nuevo directorio para un usuario");
+        panel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 140, 230, 20));
 
         jSeparator1.setBackground(java.awt.Color.black);
         panel.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 620, 10));

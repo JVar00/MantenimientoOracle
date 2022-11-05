@@ -78,17 +78,15 @@ public class RecuperacionRespaldos extends JFrame{
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jSeparator2 = new javax.swing.JSeparator();
-        jSeparator3 = new javax.swing.JSeparator();
-        jSeparator4 = new javax.swing.JSeparator();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        panel.setBackground(java.awt.Color.lightGray);
+        panel.setBackground(new java.awt.Color(255, 255, 255));
         panel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        radioSchema.setBackground(new java.awt.Color(36, 47, 65));
+        radioSchema.setBackground(new java.awt.Color(255, 255, 255));
         radioSchema.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         radioSchema.setText("Esquema");
         radioSchema.addActionListener(new java.awt.event.ActionListener() {
@@ -96,9 +94,9 @@ public class RecuperacionRespaldos extends JFrame{
                 radioSchemaActionPerformed(evt);
             }
         });
-        panel.add(radioSchema, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, -1, 20));
+        panel.add(radioSchema, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, 20));
 
-        radioTablas.setBackground(new java.awt.Color(36, 47, 65));
+        radioTablas.setBackground(new java.awt.Color(255, 255, 255));
         radioTablas.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         radioTablas.setText("Tabla");
         radioTablas.addActionListener(new java.awt.event.ActionListener() {
@@ -106,16 +104,16 @@ public class RecuperacionRespaldos extends JFrame{
                 radioTablasActionPerformed(evt);
             }
         });
-        panel.add(radioTablas, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, -1, 20));
+        panel.add(radioTablas, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, 20));
 
         boxTablas.setBackground(java.awt.Color.darkGray);
         boxTablas.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         boxTablas.setForeground(java.awt.Color.white);
-        boxTablas.setBorder(null);
+        boxTablas.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         boxTablas.setEnabled(false);
-        panel.add(boxTablas, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, 210, -1));
+        panel.add(boxTablas, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, 210, -1));
 
-        radioFull.setBackground(new java.awt.Color(36, 47, 65));
+        radioFull.setBackground(new java.awt.Color(255, 255, 255));
         radioFull.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         radioFull.setText("Full");
         radioFull.addActionListener(new java.awt.event.ActionListener() {
@@ -123,21 +121,18 @@ public class RecuperacionRespaldos extends JFrame{
                 radioFullActionPerformed(evt);
             }
         });
-        panel.add(radioFull, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, -1, 20));
+        panel.add(radioFull, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, 20));
 
-        boxDirectorios.setBackground(java.awt.Color.darkGray);
         boxDirectorios.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        boxDirectorios.setForeground(java.awt.Color.white);
-        boxDirectorios.setBorder(null);
-        panel.add(boxDirectorios, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 203, -1));
+        boxDirectorios.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        panel.add(boxDirectorios, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, 203, -1));
 
         lblDirectorios.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        lblDirectorios.setText("Directorios");
-        panel.add(lblDirectorios, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, -1, -1));
+        lblDirectorios.setText("Directorio");
+        panel.add(lblDirectorios, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
 
-        btnCargarResp.setBackground(java.awt.Color.darkGray);
+        btnCargarResp.setBackground(new java.awt.Color(204, 255, 204));
         btnCargarResp.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        btnCargarResp.setForeground(java.awt.Color.white);
         btnCargarResp.setText("Cargar Respaldo");
         btnCargarResp.setBorder(null);
         btnCargarResp.addActionListener(new java.awt.event.ActionListener() {
@@ -145,42 +140,43 @@ public class RecuperacionRespaldos extends JFrame{
                 btnCargarRespActionPerformed(evt);
             }
         });
-        panel.add(btnCargarResp, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 120, 30));
+        panel.add(btnCargarResp, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 120, 30));
 
         lblTipoElegido.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        lblTipoElegido.setForeground(new java.awt.Color(51, 102, 0));
         lblTipoElegido.setText("...");
-        panel.add(lblTipoElegido, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 350, 440, -1));
+        panel.add(lblTipoElegido, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 310, 440, -1));
 
-        btnCargarArch.setBackground(java.awt.Color.darkGray);
+        btnCargarArch.setBackground(new java.awt.Color(204, 204, 255));
         btnCargarArch.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        btnCargarArch.setForeground(java.awt.Color.white);
-        btnCargarArch.setText("Cargar Archivo");
+        btnCargarArch.setText("Abrir respaldo");
         btnCargarArch.setBorder(null);
         btnCargarArch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCargarArchActionPerformed(evt);
             }
         });
-        panel.add(btnCargarArch, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 280, 100, 30));
+        panel.add(btnCargarArch, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 260, 120, 30));
 
         lblRuta.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         lblRuta.setText("Archivo:");
-        panel.add(lblRuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 280, 70, 24));
+        panel.add(lblRuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 70, 24));
 
         jtextRuta.setEditable(false);
-        jtextRuta.setBorder(null);
-        panel.add(jtextRuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 280, 200, 20));
+        jtextRuta.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        panel.add(jtextRuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, 200, 20));
 
-        btnRegresar.setBackground(java.awt.Color.darkGray);
-        btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/devolverse.png"))); // NOI18N
+        btnRegresar.setBackground(new java.awt.Color(0, 0, 255));
+        btnRegresar.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegresar.setText("Volver");
         btnRegresar.setBorder(null);
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegresarActionPerformed(evt);
             }
         });
-        panel.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 50, 50));
+        panel.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 70, 40));
+
+        jScrollPane1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         areaComando.setEditable(false);
         areaComando.setColumns(1);
@@ -189,32 +185,33 @@ public class RecuperacionRespaldos extends JFrame{
         areaComando.setWrapStyleWord(true);
         jScrollPane1.setViewportView(areaComando);
 
-        panel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 630, 150));
+        panel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 630, 150));
 
         jLabel2.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
-        jLabel2.setText("Recuperar respaldos");
-        panel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, -1, -1));
+        jLabel2.setText("Respaldos");
+        panel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jLabel1.setText("Tipo de Respaldo");
         panel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel3.setText("Archivo");
+        jLabel3.setText("Ruta del respaldo");
         panel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, -1));
-        panel.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 610, 20));
-        panel.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 610, 10));
-        panel.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 610, 10));
+
+        jLabel4.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel4.setText("Schema / Tabla");
+        panel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, 675, Short.MAX_VALUE)
+            .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, 678, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panel, javax.swing.GroupLayout.PREFERRED_SIZE, 552, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(panel, javax.swing.GroupLayout.PREFERRED_SIZE, 505, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -434,10 +431,8 @@ public class RecuperacionRespaldos extends JFrame{
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JSeparator jSeparator4;
     private javax.swing.JTextField jtextRuta;
     private javax.swing.JLabel lblDirectorios;
     private javax.swing.JLabel lblRuta;

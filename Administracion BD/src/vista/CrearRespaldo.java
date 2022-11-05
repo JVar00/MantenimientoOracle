@@ -77,34 +77,34 @@ public class CrearRespaldo extends JFrame{
         lblTipoElegido = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         areaComando = new javax.swing.JTextArea();
-        jSeparator1 = new javax.swing.JSeparator();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jSeparator2 = new javax.swing.JSeparator();
-        jSeparator3 = new javax.swing.JSeparator();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        panel.setBackground(java.awt.Color.lightGray);
+        panel.setBackground(new java.awt.Color(255, 255, 255));
         panel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
         jLabel2.setText("Respaldos");
-        panel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, -1, -1));
+        panel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 30, -1, -1));
 
-        btnRegresar.setBackground(java.awt.Color.darkGray);
+        btnRegresar.setBackground(new java.awt.Color(0, 0, 255));
         btnRegresar.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/devolverse.png"))); // NOI18N
+        btnRegresar.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegresar.setText("Volver");
+        btnRegresar.setToolTipText("");
         btnRegresar.setBorder(null);
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegresarActionPerformed(evt);
             }
         });
-        panel.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 50, 50));
+        panel.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 70, 50));
 
-        radioSchema.setBackground(new java.awt.Color(36, 47, 65));
+        radioSchema.setBackground(new java.awt.Color(255, 255, 255));
         radioSchema.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         radioSchema.setText("Esquema");
         radioSchema.setBorder(null);
@@ -113,9 +113,9 @@ public class CrearRespaldo extends JFrame{
                 radioSchemaActionPerformed(evt);
             }
         });
-        panel.add(radioSchema, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, -1, -1));
+        panel.add(radioSchema, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, -1));
 
-        radioTablas.setBackground(new java.awt.Color(36, 47, 65));
+        radioTablas.setBackground(new java.awt.Color(255, 255, 255));
         radioTablas.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         radioTablas.setText("Tabla");
         radioTablas.setBorder(null);
@@ -124,9 +124,9 @@ public class CrearRespaldo extends JFrame{
                 radioTablasActionPerformed(evt);
             }
         });
-        panel.add(radioTablas, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 150, 70, 20));
+        panel.add(radioTablas, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 70, 20));
 
-        radioFull.setBackground(new java.awt.Color(36, 47, 65));
+        radioFull.setBackground(new java.awt.Color(255, 255, 255));
         radioFull.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         radioFull.setText("Full");
         radioFull.setBorder(null);
@@ -135,48 +135,47 @@ public class CrearRespaldo extends JFrame{
                 radioFullActionPerformed(evt);
             }
         });
-        panel.add(radioFull, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, -1));
+        panel.add(radioFull, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
 
         boxTablas.setBackground(java.awt.Color.darkGray);
         boxTablas.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        boxTablas.setBorder(null);
+        boxTablas.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         boxTablas.setEnabled(false);
-        panel.add(boxTablas, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 150, 310, -1));
+        panel.add(boxTablas, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 310, -1));
 
         lblDirectorios.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        lblDirectorios.setText("Directorios");
-        panel.add(lblDirectorios, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, -1, -1));
+        lblDirectorios.setText("Directorio");
+        panel.add(lblDirectorios, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, -1, -1));
 
-        boxDirectorios.setBackground(java.awt.Color.darkGray);
         boxDirectorios.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        boxDirectorios.setBorder(null);
+        boxDirectorios.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         boxDirectorios.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 boxDirectoriosItemStateChanged(evt);
             }
         });
-        panel.add(boxDirectorios, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, 203, -1));
+        panel.add(boxDirectorios, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, 310, -1));
 
         lblNombreArchivo.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        lblNombreArchivo.setText("Nombre del archivo del respaldo a crear");
-        panel.add(lblNombreArchivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, -1, -1));
+        lblNombreArchivo.setText("Nombre del Respaldo");
+        panel.add(lblNombreArchivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, -1, -1));
 
-        txtNombreArchivo.setBorder(null);
-        panel.add(txtNombreArchivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 300, 200, 20));
+        txtNombreArchivo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        panel.add(txtNombreArchivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 310, 20));
 
         lblDirDirectorio.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         lblDirDirectorio.setText("Dirección de Directorio");
-        panel.add(lblDirDirectorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 340, -1, -1));
+        panel.add(lblDirDirectorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 326, -1, 30));
 
         txtDirDirectorio.setEditable(false);
         txtDirDirectorio.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        txtDirDirectorio.setBorder(null);
+        txtDirDirectorio.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         txtDirDirectorio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtDirDirectorioActionPerformed(evt);
             }
         });
-        panel.add(txtDirDirectorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 340, 313, 20));
+        panel.add(txtDirDirectorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 330, 310, 20));
 
         btnCrear.setBackground(new java.awt.Color(153, 255, 153));
         btnCrear.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
@@ -187,16 +186,17 @@ public class CrearRespaldo extends JFrame{
                 btnCrearActionPerformed(evt);
             }
         });
-        panel.add(btnCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 380, 120, 30));
+        panel.add(btnCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 370, 180, 30));
 
         jLabel1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jLabel1.setText("Resultado");
-        panel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 430, 80, -1));
+        panel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, 80, -1));
 
         lblTipoElegido.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        lblTipoElegido.setForeground(new java.awt.Color(51, 102, 0));
         lblTipoElegido.setText("...");
-        panel.add(lblTipoElegido, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, 560, -1));
+        panel.add(lblTipoElegido, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 410, 560, -1));
+
+        jScrollPane1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         areaComando.setEditable(false);
         areaComando.setColumns(1);
@@ -205,32 +205,34 @@ public class CrearRespaldo extends JFrame{
         areaComando.setWrapStyleWord(true);
         jScrollPane1.setViewportView(areaComando);
 
-        panel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, 730, 180));
-        panel.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 710, 10));
+        panel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, 730, 180));
 
         jLabel3.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel3.setText("Tipo de Respaldo");
-        panel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, -1));
+        jLabel3.setText("Schema / Tabla");
+        panel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel4.setText("Archivo");
+        jLabel4.setText("Ruta del Respaldo");
         panel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, -1, -1));
 
-        jSeparator2.setBackground(java.awt.Color.black);
-        panel.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, 720, 10));
-
-        jSeparator3.setBackground(java.awt.Color.black);
-        panel.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 710, 10));
+        jLabel5.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel5.setText("Tipo de Respaldo");
+        panel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panel, javax.swing.GroupLayout.PREFERRED_SIZE, 797, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(panel, javax.swing.GroupLayout.PREFERRED_SIZE, 797, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panel, javax.swing.GroupLayout.PREFERRED_SIZE, 666, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(panel, javax.swing.GroupLayout.PREFERRED_SIZE, 631, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -433,10 +435,8 @@ public class CrearRespaldo extends JFrame{
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JSeparator jSeparator3;
     private javax.swing.JLabel lblDirDirectorio;
     private javax.swing.JLabel lblDirectorios;
     private javax.swing.JLabel lblNombreArchivo;
