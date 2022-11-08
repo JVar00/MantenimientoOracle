@@ -109,7 +109,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="sansserif" size="12" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Compatible con OracleXE 18c"/>
+            <Property name="text" type="java.lang.String" value="Compatible con OracleXE 21c"/>
           </Properties>
           <AccessibilityProperties>
             <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>

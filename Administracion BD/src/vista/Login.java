@@ -110,7 +110,7 @@ public class Login extends javax.swing.JFrame{
         Panel_derecho.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, -1, 20));
 
         jLabel7.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel7.setText("Compatible con OracleXE 18c");
+        jLabel7.setText("Compatible con OracleXE 21c");
         Panel_derecho.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, 170, -1));
         jLabel7.getAccessibleContext().setAccessibleDescription("");
 

@@ -208,7 +208,7 @@ public class CrearRespaldo extends JFrame{
         panel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, 730, 180));
 
         jLabel3.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel3.setText("Schema / Tabla");
+        jLabel3.setText("Tabla");
         panel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
@@ -365,7 +365,7 @@ public class CrearRespaldo extends JFrame{
         try{
             
             String comando;
-            comando = "cmd /c " + "EXPDP" + " " + usuario +"/"+ contrasena  + " " + tipoRespaldo +" DIRECTORY = "+ dir 
+            comando = "cmd /c " + "EXPDP" + " " + usuario +"/"+ contrasena  + "@XE" + " " + tipoRespaldo +" DIRECTORY = "+ dir 
                     + " DUMPFILE = " + txtNombreArchivo.getText() +".dmp LOGFILE = " + txtNombreArchivo.getText() + "_log.log";
 
             //Ejecutamos el comando
