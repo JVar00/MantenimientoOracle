@@ -361,7 +361,7 @@ public class RecuperacionRespaldos extends JFrame{
         try{
 
             String comando;
-            comando = "cmd /c " + "IMPDP" + " " + usuario +"/"+ contrasena  + " " + tipoRespaldo +" DIRECTORY = "+ dir 
+            comando = "cmd /c " + "IMPDP" + " " + usuario +"/"+ contrasena  + "@XE" + " " + tipoRespaldo +" DIRECTORY = "+ dir 
                     + " DUMPFILE = " + jtextRuta.getText() +" LOGFILE = " + jtextRuta.getText() + ".log";
 
             // Ejcutamos el comando

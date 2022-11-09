@@ -221,7 +221,7 @@ public class Tablespaces extends JFrame{
         
         
         
-        JFileChooser fileChooser = new JFileChooser("C:/OracleXE/app/oracle/oradata/XE");//Abre una ventana para guardar el archivo
+        JFileChooser fileChooser = new JFileChooser("C:/app/jeff0/product/21c/oradata/XE");//Abre una ventana para guardar el archivo
         fileChooser.setFileFilter(new FileNameExtensionFilter("Database File","dbf"));//Filtra la extensión .dbf
             
         if(fileChooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION){
@@ -252,7 +252,7 @@ public class Tablespaces extends JFrame{
     
     public void crearTablespaceTemporal(){
         
-        JFileChooser fileChooser = new JFileChooser("C:/OracleXE/app/oracle/oradata/XE");//Abre una ventana para guardar el archivo
+        JFileChooser fileChooser = new JFileChooser("C:/app/jeff0/product/21c/oradata/XE");//Abre una ventana para guardar el archivo
         fileChooser.setFileFilter(new FileNameExtensionFilter("Database File","dbf"));//Filtra la extensión .dbf
             
         if(fileChooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION){
@@ -283,7 +283,7 @@ public class Tablespaces extends JFrame{
     
     public void cambiarTamanoDatafile(){
         
-        JFileChooser fileChooser = new JFileChooser("C:/OracleXE/app/oracle/oradata/XE");//Abre una ventana para guardar el archivo
+        JFileChooser fileChooser = new JFileChooser("C:/app/jeff0/product/21c/oradata/XE");//Abre una ventana para guardar el archivo
         fileChooser.setFileFilter(new FileNameExtensionFilter("Database File","dbf"));//Filtra la extensión .dbf
             
         if(fileChooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION){
